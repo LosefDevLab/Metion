@@ -11,3 +11,12 @@
 ##### APIO is a way that provides us with powerful compatibility. Its full name is Application Program Interface Output. With the optimization of the Metion mod loader, the stability is very high.
 >[!NOTE]
 >That pertains to the release stable version. However, we are very strict about the release of the official stable version.
+##### Version explanation
+>[!Note]
+>Ver 0.0.x0.b0
+> * x represents r/p/d/s
+> * b represents build No.
+> *   r = release version group
+> *   p = preview version group
+> *   d = develop version group
+> *   s =  stable version group
