@@ -1,4 +1,4 @@
-﻿/*
+/*
 XUCO Copyright text:
     Metion tm. 2024-now
     (Stu.)XYLCS Studio/Xit/LosefDevLab is creator and publisher
