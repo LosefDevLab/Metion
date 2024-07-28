@@ -61,7 +61,7 @@ namespace metlod//Metion Mod Loader
 }
 int main()
     {
-        cout << "Metion | Windows Additional Experience Mod Loader\nver 0.1.d1.b1\n";
+        cout << "Metion | Windows Additional Experience Mod Loader\nver 0.1.d1.b2\n";
         metlod::loader lod;
         lod.run(); 
         system("pause");
