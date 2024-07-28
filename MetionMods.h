@@ -1,10 +1,11 @@
-//MMBH VERSION 0.1.d1.b1
+//MMBH VERSION 0.1.d1.b2
 //MMBH(Metion Mod Build Headerfile)
 #pragma once
 #include <iostream>
 #include <windows.h>
 #include <string>
 #include <fstream>
+#include <cstdlib>
 using namespace std;
 
 namespace metmod//Metion Mod Library, Support and Registration
@@ -22,9 +23,9 @@ namespace metmod//Metion Mod Library, Support and Registration
 				string ModVer = "1.0.s1";
 				string ModMMBHVer = "0.1.d1.b1";
 				//Config and APIO Path
-				string ModFP = "\\MetionMod";
-				string ModCFP = "\\MetionMod\\config";
-				string ModAPIOP = "\\MetionMod\\apio";
+				string ModFP = "C:\\MetionMod";
+				string ModCFP = "C:\\MetionMod\\config";
+				string ModAPIOP = "C:\\MetionMod\\apio";
 				string ModPath = "\\MetionMod.exe";
 			//A Metion Mod must need have a folder and it name it's ModName otherwise the mod is invalid
 			//The mod config file and mods folder do not match and are invalid
@@ -69,5 +70,20 @@ namespace metmod//Metion Mod Library, Support and Registration
 		file << infoinput << endl;//write
 
 		file.close();
+
+		ofstream cfile(ModCFP + "\\mod.config");
+
+		ofstream crapiof(ModAPIOP + "\\apio.txt");
+
+		ifstream apiof(ModAPIOP + "\\apio.txt");
+		
+		string apioram = "";
+		
+		getline(apiof, apioram);
+
+		if (apioram != "this metion mod is loaded by metion!can run")
+		{
+			exit(0);
+		}//Secure load verifier
 	}
 }
